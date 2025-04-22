@@ -51,7 +51,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "todoproj.urls"
-
+LOGIN_URL = "login"  # This tells Django where your login page is
+LOGIN_REDIRECT_URL = "home-page"  # Where to redirect after login
+LOGOUT_REDIRECT_URL = "login"  # Where to redirect after logout
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
